@@ -1,9 +1,9 @@
 ---
 name: landing-page
-description: Build a distinctive one-page landing site through a guided intake — topic and core message, three or more references, optional style and motion direction, then three design directions proposed before any code is written. Use when the user writes "landing page", or asks to design or build a landing page, hero section, promo page, or marketing one-pager.
+description: Build a distinctive one-page landing site through a guided intake — topic and core message, three or more references, a proposed style and stack to confirm, then three design directions described in prose before any code is written. Use when the user writes "landing page", or asks to design or build a landing page, hero section, promo page, or marketing one-pager.
 metadata:
   author: mantascw
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Landing Page
@@ -19,17 +19,26 @@ The intake is the product. Do not rush it.
 These apply to every step below.
 
 - **One step per turn.** Ask, stop, wait for the answer. Never bundle two steps into one message.
-- **The gates are real.** Steps 1, 2 and 5 have a bar that must be met before moving on. Do not advance because the user seems impatient — advance because the bar is met.
-- **No code before Step 5 is approved.** Not a scaffold, not a quick sketch, not "just the hero to show you". Nothing.
+- **The gates are real.** Steps 1, 2 and 4 have a bar that must be met before moving on. Do not advance because the user seems impatient — advance because the bar is met.
+- **No code before Step 4 is approved.** Not a scaffold, not a quick sketch, not "just the hero to show you". Nothing.
 - **Don't echo the user back.** A short reaction is fine. Summarising their own words at them wastes their time.
-- **Open questions get plain text.** Use structured multiple-choice only when the user is genuinely picking from a list.
 - **Keep your own questions short.** One paragraph of ask, not a form.
+
+### Asking questions
+
+Typing is the main cost the user pays in this skill. Default to **AskUserQuestion** so they can click instead.
+
+Use AskUserQuestion when you are offering a choice between positions you can name — a decision you could make yourself but shouldn't. Every one of these carries a free-text "Other", so the user is never boxed in.
+
+Use plain text only for the two openers that genuinely need the user's own words: the brief in Step 1 and the reference list in Step 2. Everything else — every follow-up, every narrowing, every pick — goes through the modal.
+
+When you build options, make them real alternatives that lead somewhere different. Three sharply opposed options beat four shades of the same answer. Put your recommendation first and mark it `(Recommended)`.
 
 ---
 
 ## Step 1 — Topic and core message
 
-Ask what the page is for. Tell the user you want 3–4 sentences, not a title, and say why: the difference between a generic page and a good one is almost entirely in this answer.
+Ask what the page is for, in plain text. Tell the user you want 3–4 sentences, not a title, and say why: the difference between a generic page and a good one is almost entirely in this answer.
 
 Prompt them to cover the subject, who it is for, and what a visitor should take away or do.
 
@@ -43,7 +52,18 @@ Prompt them to cover the subject, who it is for, and what a visitor should take 
 | Action | What they should do, or feel, by the end |
 | Tone | How it should feel — calm, loud, technical, playful |
 
-If something is missing, ask **one** follow-up at a time, naming the specific gap. Maximum three follow-ups; after that, propose your own answer for whatever is still open and ask the user to confirm or correct it.
+If something is missing, ask **one** follow-up at a time, naming the specific gap.
+
+Put follow-ups through AskUserQuestion. You have read the brief, so you can almost always name the plausible answers — and seeing them laid out helps the user more than an open question does. Audience is the gap that comes up most:
+
+> **Who lands on this page?** · *Audience*
+> - People who've never heard the name — needs context first
+> - People who already know the subject — can go straight to the work
+> - An art/design audience — wants the work to dominate, minimal narration
+
+Say what changes with each choice. The point is to show the user the consequence, not just collect an answer.
+
+Maximum three follow-ups. After that, propose your own answer for whatever is still open and ask them to confirm it.
 
 Hold this brief in mind for the rest of the session. Every later decision gets checked against it.
 
@@ -51,7 +71,7 @@ Hold this brief in mind for the rest of the session. Every later decision gets c
 
 ## Step 2 — References
 
-Ask for at least three references, in any form:
+Ask for at least three references, in plain text, in any form:
 
 - Live URLs of sites they like
 - Screenshots or images of a hero, a layout, a type treatment
@@ -64,45 +84,44 @@ For each reference, ask what specifically they like about it — composition, ty
 
 **Gate — three usable references with a stated reason each.**
 
-If the user can't reach three after two asks, don't stall. Propose five candidate references yourself, drawn from the Step 1 brief, and ask them to pick at least three and say what appeals. Picking is easier than recalling.
+If the user can't reach three after two asks, don't stall. Propose five candidates yourself, drawn from the Step 1 brief, in a single AskUserQuestion with `multiSelect: true`. Picking is easier than recalling.
+
+### Name the tension
+
+Once you've looked at everything, tell the user what you think they're responding to — the specific mechanism in each reference, not the vibe. "The artist's name is enormous and the painting under it is small and properly credited" is a mechanism. "Clean and elegant" is not.
+
+References usually pull in incompatible directions, and that conflict is the most useful thing in the whole intake. Name it and make the user resolve it through AskUserQuestion:
+
+> **Your references point two ways — which one?** · *Register*
+> - Reverent — the material is treated as precious
+> - Irreverent — contemporary handling, deliberately disrespectful of the format
+> - The collision — reverent material, irreverent handling
+
+Don't flatten the tension yourself. A user who picks the collision has just given you more than their entire brief did.
 
 ---
 
-## Step 3 — Style and tools (optional)
+## Step 3 — Propose the approach, confirm in one question
 
-Ask whether they have constraints or preferences already in mind:
+Do not interrogate. By now you can infer almost all of this yourself, and a list of five open questions about typefaces and motion libraries is exactly the kind of friction that makes people abandon the intake.
 
-- Typefaces, or a foundry/vibe they want
-- Colour palette, brand colours, things to avoid
-- Motion: GSAP + ScrollTrigger, Framer Motion / Motion One, Lenis for smooth scroll, or no motion at all
-- Anything they must or must not use — a component library, an existing design system, a deployment target
+Work out your own answer for each of these and state the calls in a short paragraph — the decision and the reason, not a form:
 
-This step is genuinely optional. If the user has nothing, say you'll propose a direction for each of these in Step 4 and move on immediately. Don't interrogate.
+- **Typefaces** — a direction, not a final pick. That lands in Step 4.
+- **Colour** — described in words. Note it if the subject already has a palette of its own.
+- **Motion** — GSAP + ScrollTrigger, Framer Motion / Motion One, Lenis for smooth scroll, or deliberately none.
+- **Stack** — see below.
+- **Imagery** — where it comes from, and whether licensing is clear. Flag anything the user has to supply.
 
----
+Then ask exactly one AskUserQuestion with `multiSelect: true`:
 
-## Step 4 — Three directions, no code
+> **Anything to pin down before I draw up directions?** · *Constraints*
+> - Nothing — your call (Recommended)
+> - I have typefaces or brand colours
+> - I have a stack requirement
+> - I'll supply the imagery
 
-Present exactly three directions. They must be meaningfully different — not one idea in three colourways. Vary the structural idea, not just the palette.
-
-For each direction give:
-
-- **Name** — short, memorable, so the user can say "let's do the second one"
-- **Concept** — one line on the idea and why it fits the brief
-- **Structure** — the sections in order, with what each one does
-- **Composition** — the layout idea, with a small ASCII wireframe of the hero
-- **Typography** — the actual typefaces, their roles, and why these and not the usual ones
-- **Colour** — 4–6 named hex values
-- **Motion** — what moves, when, and why. If nothing should move, say so
-- **Imagery** — what images the page needs and where they come from. Flag anything the user must supply
-- **Stack** — what you'd build it in, and the reason
-- **The risk** — the one thing that makes this direction distinctive, and what it costs
-
-Before showing them, check each direction against the brief from Step 1. If any part of it would read the same for a different subject entirely, it's a default rather than a choice. Replace it.
-
-End by asking the user to pick one, or to mix elements across directions. Wait.
-
-**Gate — an explicit choice. "They all look good" is not a choice; ask them to pick.**
+Anything other than the first option gets one plain-text follow-up for the detail. If they pick the first, move straight to Step 4.
 
 ### Choosing the stack
 
@@ -111,9 +130,41 @@ Let the brief decide, not habit.
 - Scroll-driven, motion-heavy, no data or routing → a plain Vite + HTML/CSS/JS setup. Least framework noise, GSAP and Lenis drop straight in.
 - Needs routing, a CMS, forms, or serious SEO → Next.js.
 - Already inside an existing repo → match what's there. Never introduce a second framework.
-- The user named a stack in Step 3 → use it, no debate.
+- The user named a stack → use it, no debate.
 
-State the choice and the reason in the direction. Don't make the user ask.
+---
+
+## Step 4 — Three directions, no code
+
+Present exactly three directions. They must be meaningfully different — not one idea in three colourways. Vary the structural idea.
+
+**Describe each one in prose. Three to five sentences.** The user is choosing between ideas here, not approving a specification, and detail they can't yet evaluate only makes the choice harder.
+
+For each direction:
+
+- **Name** — short and memorable, so the user can say "the second one"
+- **The idea** — what the page does, how it's structured, how it behaves as you move through it, and why it fits the brief. Written as prose. Name the typefaces if you have a strong view and say what they're doing. Describe colour in words — "near-black, bone, old gold, a rust accent".
+- **The risk** — one line. What makes this direction distinctive, and what it costs.
+
+Then ask the user to pick, through AskUserQuestion:
+
+> **Which direction?** · *Direction*
+> - *First name* — one line
+> - *Second name* — one line
+> - *Third name* — one line
+
+"Other" is how they splice elements across directions, so leave room for that in your framing.
+
+**Gate — an explicit choice.**
+
+### What not to do here
+
+- **No ASCII wireframes.** Layout rendered as text characters communicates nothing a sentence couldn't, and reads as filler.
+- **No hex codes.** `#C9A227` is not a decision the user can make in the abstract. Say "old gold".
+- **No spec tables, no field-by-field template.** Three walls of structured text is harder to choose between than three paragraphs.
+- **Don't resolve what you don't need yet.** Exact type scales, palettes and section counts get worked out after the pick, during the build, where they can be seen.
+
+Before showing them, check each direction against the Step 1 brief. If any part of it would read the same for a different subject entirely, it's a default rather than a choice. Replace it.
 
 ---
 
