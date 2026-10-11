@@ -21,6 +21,7 @@ These apply to every step below.
 - **One step per turn.** Ask, stop, wait for the answer. Never bundle two steps into one message.
 - **The gates are real.** Steps 1, 2 and 4 have a bar that must be met before moving on. Do not advance because the user seems impatient — advance because the bar is met.
 - **No code before Step 4 is approved.** Not a scaffold, not a quick sketch, not "just the hero to show you". Nothing.
+- **Every size, always.** The page works at every breakpoint. This is not a feature, an option, or a trade-off. Never ask the user whether they want it, never offer a desktop-only version, never report it afterwards as though it were an achievement. A design that only resolves on a wide screen is not finished.
 - **Don't echo the user back.** A short reaction is fine. Summarising their own words at them wastes their time.
 - **Keep your own questions short.** One paragraph of ask, not a form.
 
@@ -144,7 +145,9 @@ For each direction:
 
 - **Name** — short and memorable, so the user can say "the second one"
 - **The idea** — what the page does, how it's structured, how it behaves as you move through it, and why it fits the brief. Written as prose. Name the typefaces if you have a strong view and say what they're doing. Describe colour in words — "near-black, bone, old gold, a rust accent".
-- **The risk** — one line. What makes this direction distinctive, and what it costs.
+- **The risk** — one line. What makes this direction distinctive, and what it costs. Not a list of caveats, and never "it'll be hard on mobile".
+
+Every direction has to hold up at every size before you propose it. Where an idea needs a different form on a phone — a pinned split becoming a sequence, a horizontal pan turning vertical — that form is part of the direction, worked out before you present it. An idea that only resolves on a wide screen isn't a direction yet, so replace it rather than offering it with a warning attached.
 
 Then ask the user to pick, through AskUserQuestion:
 
@@ -174,8 +177,22 @@ Build the chosen direction.
 
 - **Real content.** Write actual copy from the Step 1 brief. No lorem ipsum, no `[Your headline here]`.
 - **Real images.** Use what the user supplied. If they supplied nothing, source public-domain or appropriately licensed images and credit them in the markup. Tell the user exactly which images are placeholders and need replacing.
-- **Quality floor, unannounced.** Responsive to mobile, visible keyboard focus, `prefers-reduced-motion` respected, sensible contrast.
-- **Run it.** Start the dev server, open the page, screenshot it, and look. Check the hero, mid-scroll, the footer, and a narrow viewport. Fix what looks wrong before showing the user.
+- **Quality floor, unannounced.** Visible keyboard focus, `prefers-reduced-motion` respected, sensible contrast, a real `<title>` and meta description.
+- **Every breakpoint, from the first section.** See below. Retrofitting small screens after the desktop page is standing is how the second design ends up being a worse version of the first.
+- **Run it.** Start the dev server and look at the page at 390, 768 and 1440. Screenshot the hero, mid-scroll and the footer at each width. Fix what's wrong before showing the user, and don't narrate the fixes.
+
+### Breakpoints
+
+Scroll-driven pages don't reflow, they get redesigned. The desktop idea has to survive in a different body, which means deciding what it becomes rather than letting it collapse:
+
+- **Pinned sections** — pinning fights the address bar and eats battery on a phone. Unpin and let the section scroll, or shorten the hold considerably.
+- **Horizontal pan driven by vertical scroll** — becomes a vertical sequence, or a swipeable track with real momentum. Not a squashed version of the desktop pan.
+- **Split screens** — become a sequence. One register, then the other.
+- **Display type** — set for 1440 it is unreadable at 390. Size it with `clamp()` against viewport units so it tracks, and check the longest word in the headline actually fits.
+- **Motion** — the same effect count costs far more on a phone. Keep the one piece of motion that carries the idea and drop the rest.
+- **Touch** — 44px minimum targets, and nothing important behind a hover.
+
+Pick breakpoints from where this layout actually breaks, not from a framework's defaults. Inherited `sm md lg xl` is the same reflex as reaching for Inter.
 
 ### Design review
 

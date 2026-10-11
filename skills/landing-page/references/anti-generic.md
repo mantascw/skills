@@ -48,6 +48,20 @@ Borders, rules, numbers, eyebrows and dividers should encode information about t
 - Motion that responds to a user action — opening, expanding, confirming — is always welcome.
 - `prefers-reduced-motion` must be respected.
 
+## Small screens
+
+Look at the page at 390 wide before you call it reviewed. Most of what goes wrong here is a desktop design left to collapse on its own.
+
+- Display type scaled down until it's timid, instead of staying bold at a size that fits.
+- A headline whose longest word overflows or hyphenates badly.
+- Pinned sections still pinned, so the page feels stuck.
+- A horizontal pan squashed into a few hundred pixels and now illegible.
+- Desktop margins kept at full width, leaving a narrow column of text down the middle.
+- Every scroll effect retained, so the page stutters.
+- Hover carrying something the design needs, with no touch equivalent.
+
+The test is the same as the hero test: does the idea still read, or has it become a plain stack of sections that could belong to any page?
+
 ## Copy
 
 - Plain verbs, sentence case, no filler.
