@@ -1,6 +1,6 @@
 ---
 name: landing-page
-description: Build a distinctive one-page landing site through a guided intake — topic and core message, three or more references, a proposed style and stack to confirm, then three design directions described in prose before any code is written. Use when the user writes "landing page", or asks to design or build a landing page, hero section, promo page, or marketing one-pager.
+description: Build a distinctive landing page through a guided intake — topic and core message, three or more references, a proposed style and stack to confirm, then three design directions described in prose before any code is written. Use when the user writes "landing page", or asks to design or build a landing page, hero section, or promo page.
 metadata:
   author: mantascw
   version: "1.1.0"

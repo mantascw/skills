@@ -1,6 +1,6 @@
 # Landing Page
 
-Build a one-page landing site through a guided intake instead of a single thin prompt. Packaged in the [Agent Skills format](https://agentskills.io/home).
+Build a landing page through a guided intake instead of a single thin prompt. Packaged in the [Agent Skills format](https://agentskills.io/home).
 
 Ask an agent for a landing page and you get the same page every time: centred hero, gradient wash, Inter, three rounded cards, a fade-up on every section. That isn't a model limitation — it's what a one-line prompt deserves. The template is the average of everything, and a thin prompt gives the model nothing to deviate from.
 

@@ -20,7 +20,7 @@ Works with Claude Code, Codex, Cursor, OpenCode and [others](https://github.com/
 
 | Skill | What it does |
 |---|---|
-| [`landing-page`](skills/landing-page) | Builds a one-page landing site through a guided intake — a real brief, references the agent actually opens, and three directions to choose from before any code is written. |
+| [`landing-page`](skills/landing-page) | Builds a landing page through a guided intake — a real brief, references the agent actually opens, and three directions to choose from before any code is written. |
 
 ## License
 
