@@ -10,7 +10,7 @@ A font file, a photograph, an easing curve are ingredients. What you do with the
 
 A styled component kit, a stock photo, a generated palette, a template — these arrive already looking like something. That something is what everyone else's page looks like, because they all started from the same box. The page comes out as the average of everything the source has ever produced.
 
-Everything below is raw material. The popular exceptions are named at the bottom, with what they cost you.
+Everything below is raw material.
 
 ---
 
@@ -53,19 +53,3 @@ Places to go and get the three references this skill asks for in Step 2.
 - **[Are.na](https://www.are.na)** — slower, stranger, better for finding something that isn't already in everyone's moodboard.
 
 Collect the mechanism, not the vibe. "The name is enormous and the image under it is small" is usable. "Clean and elegant" is not.
-
----
-
-## The popular ones, and what they cost
-
-Not forbidden. Just understand what you're buying.
-
-| | |
-|---|---|
-| **Google Fonts** | Fine, and the most-used faces on the web are in it. Inter, Poppins and Montserrat are instantly legible as defaults. Fontshare costs the same (nothing) and doesn't. |
-| **Unsplash / Pexels** | Free, but stock photography has a recognisable look — the same compositions, the same lighting, the same empty laptop on the same desk. The top results have been used thousands of times. |
-| **Coolors** | Generates a palette with no knowledge of your subject. Useful for exploring relationships, not for choosing. |
-| **shadcn/ui** | Pre-styled Tailwind components. Fast, popular, and the direct source of the identical-rounded-cards look. It's a look, and it's a common one. |
-| **Tailwind defaults** | The utility layer is fine. The default scale is where `rounded-lg` + `shadow-md` + `gray-500` comes from — override it. |
-
-The common thread: each saves a decision, and the decision it saves is one of the few that makes the page specific to its subject.
