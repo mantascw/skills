@@ -18,7 +18,8 @@ Everything below is raw material.
 
 Start here. Places to go and get the three references this skill asks for in Step 2.
 
-- **[Mobbin](https://mobbin.com)** — real product UI, searchable by pattern.
+- **[Pinterest](https://www.pinterest.com)** — the fastest way to build a board when you don't know what you want yet. Search for a composition or a feeling rather than a product. Pins are decontextualised and often low-res, so treat them as a direction to describe, not an artefact to copy.
+- **[Mobbin](https://mobbin.com)** (Paid) — real product UI, searchable by pattern.
 - **[SiteInspire](https://www.siteinspire.com)** and **[Godly](https://godly.website)** — curated web design, strong on type and motion.
 - **[Are.na](https://www.are.na)** — slower, stranger, better for finding something that isn't already in everyone's moodboard.
 
