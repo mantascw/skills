@@ -29,8 +29,6 @@ For pairing: one family, or two that are clearly distinct. Two faces that are ne
 - **[GSAP](https://gsap.com)** — the standard for scroll-driven work. Fully free since April 2025, including every formerly paid plugin: ScrollTrigger, SplitText, MorphSVG, ScrollSmoother. If you were told ScrollTrigger costs money, that's out of date.
 - **[Motion](https://motion.dev)** — formerly Framer Motion. The React answer; Motion One covers vanilla JS.
 - **[Lenis](https://lenis.darkroom.engineering)** — smooth scroll, small and well-behaved. GSAP's ScrollSmoother does the same job if you're already using GSAP.
-- **[CSS scroll-driven animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll-driven_animations)** — native, no library. Enough for reveals and progress indicators. Reach here first.
-- **[easings.net](https://easings.net)** — the curve matters more than the duration. Default `ease` is why motion feels cheap.
 
 Respect `prefers-reduced-motion`. Not optional.
 
