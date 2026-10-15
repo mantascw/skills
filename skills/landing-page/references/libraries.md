@@ -14,6 +14,16 @@ Everything below is raw material.
 
 ---
 
+## Inspiration
+
+Start here. Places to go and get the three references this skill asks for in Step 2.
+
+- **[Mobbin](https://mobbin.com)** — real product UI, searchable by pattern.
+- **[SiteInspire](https://www.siteinspire.com)** and **[Godly](https://godly.website)** — curated web design, strong on type and motion.
+- **[Are.na](https://www.are.na)** — slower, stranger, better for finding something that isn't already in everyone's moodboard.
+
+Collect the mechanism, not the vibe. "The name is enormous and the image under it is small" is usable. "Clean and elegant" is not.
+
 ## Type
 
 The single biggest lever on how a page feels. Change nothing else and change the typeface, and it's a different page.
@@ -43,13 +53,3 @@ Public-domain archives beat stock. The material is more specific, more surprisin
 - **[Wikimedia Commons](https://commons.wikimedia.org)** — everything else. Check the licence on each file and credit as required.
 
 Credit in the markup even when the licence doesn't demand it.
-
-## Inspiration
-
-Places to go and get the three references this skill asks for in Step 2.
-
-- **[Mobbin](https://mobbin.com)** — real product UI, searchable by pattern.
-- **[SiteInspire](https://www.siteinspire.com)** and **[Godly](https://godly.website)** — curated web design, strong on type and motion.
-- **[Are.na](https://www.are.na)** — slower, stranger, better for finding something that isn't already in everyone's moodboard.
-
-Collect the mechanism, not the vibe. "The name is enormous and the image under it is small" is usable. "Clean and elegant" is not.
