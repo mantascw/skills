@@ -44,13 +44,6 @@ Public-domain archives beat stock. The material is more specific, more surprisin
 
 Credit in the markup even when the licence doesn't demand it.
 
-## Craft
-
-- **[Utopia](https://utopia.fyi)** — fluid type and space scales that interpolate between breakpoints. Solves most of what goes wrong between 390 and 1440 in one step.
-- **[Squoosh](https://squoosh.app)** — compress images properly. An uncompressed hero is the most common performance problem on a landing page.
-
-If the page genuinely needs an accordion, a dialog or a form, use unstyled primitives — [Base UI](https://base-ui.com) or [Radix](https://www.radix-ui.com/primitives) — and write the CSS yourself. Never a styled kit.
-
 ## Inspiration
 
 Places to go and get the three references this skill asks for in Step 2.
