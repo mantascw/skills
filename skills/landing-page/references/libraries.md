@@ -19,7 +19,6 @@ Everything below is raw material. The popular exceptions are named at the bottom
 The single biggest lever on how a page feels. Change nothing else and change the typeface, and it's a different page.
 
 - **[Fontshare](https://www.fontshare.com)** — free for commercial use, variable weights, properly drawn. Note that Satoshi and Clash Display are the two most-downloaded faces in the catalogue by a wide margin; they're well on their way to becoming the next Inter. Use the rest of the library.
-- **[Velvetyne](https://velvetyne.fr)** — libre, experimental, full of character. The riskiest and most rewarding source here. Two warnings: much of it is display-only, so set body text in something else, and check the character set covers your language before committing — diacritics coverage varies a lot.
 - **[Fonts In Use](https://fontsinuse.com)** — an archive of typefaces in real projects. The hard part isn't finding a font, it's knowing what it looks like deployed. Search a face here before you commit to it.
 - **[Fontsource](https://fontsource.org)** — self-host open fonts as npm packages. Faster than a Google Fonts link and no third-party request.
 
@@ -81,7 +80,7 @@ Not forbidden. Just understand what you're buying.
 
 | | |
 |---|---|
-| **Google Fonts** | Fine, and the most-used faces on the web are in it. Inter, Poppins and Montserrat are instantly legible as defaults. Fontshare and Velvetyne cost the same (nothing) and don't. |
+| **Google Fonts** | Fine, and the most-used faces on the web are in it. Inter, Poppins and Montserrat are instantly legible as defaults. Fontshare costs the same (nothing) and doesn't. |
 | **Unsplash / Pexels** | Free, but stock photography has a recognisable look — the same compositions, the same lighting, the same empty laptop on the same desk. The top results have been used thousands of times. |
 | **Coolors** | Generates a palette with no knowledge of your subject. Useful for exploring relationships, not for choosing. |
 | **shadcn/ui** | Pre-styled Tailwind components. Fast, popular, and the direct source of the identical-rounded-cards look. It's a look, and it's a common one. |
