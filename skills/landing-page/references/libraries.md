@@ -46,8 +46,10 @@ Respect `prefers-reduced-motion`. Not optional.
 
 Public-domain archives beat stock. The material is more specific, more surprising, and free of the look that makes a photo recognisable as stock.
 
-- **[Met Open Access](https://www.metmuseum.org/art/collection)** — ~500k public-domain works, high resolution.
-- **[Rijksmuseum](https://www.rijksmuseum.nl/en/rijksstudio)** — exceptional scans, generous download sizes.
+Everything here is free for commercial use, but only for the works the institution has cleared. Collections hold in-copyright pieces alongside public-domain ones and the search results mix them, so filter before you download rather than after you've built the page around it.
+
+- **[Met Open Access](https://www.metmuseum.org/art/collection)** — ~406k works under CC0, high resolution. Tick the Open Access filter; the rest of the collection isn't cleared.
+- **[Rijksmuseum](https://www.rijksmuseum.nl/en/rijksstudio)** — CC0, exceptional scans, around 4500×4500px. Needs a free account before it will let you download.
 - **[Smithsonian Open Access](https://www.si.edu/openaccess)** — ~4M items, far beyond art.
 - **[Library of Congress](https://www.loc.gov/free-to-use/)** — photography, maps, ephemera, print.
 - **[Wikimedia Commons](https://commons.wikimedia.org)** — everything else. Check the licence on each file and credit as required.
