@@ -114,6 +114,8 @@ Work out your own answer for each of these and state the calls in a short paragr
 - **Stack** — see below.
 - **Imagery** — where it comes from, and whether licensing is clear. Flag anything the user has to supply.
 
+[references/libraries.md](references/libraries.md) is where to source each of these. Read it before you make the calls, and follow its rule: raw material, never a styled kit or a stock photo. If the user asks where any of this comes from, point them at that file rather than listing links in chat.
+
 Then ask exactly one AskUserQuestion with `multiSelect: true`:
 
 > **Anything to pin down before I draw up directions?** · *Constraints*

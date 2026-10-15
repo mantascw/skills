@@ -37,7 +37,7 @@ Expect five to ten minutes of back-and-forth before any code appears. That delay
 - **A brief, not a title.** Five things have to be on the table before anything else happens: subject, audience, core message, action, tone. Missing ones get chased one at a time, as multiple choice where the options can be named.
 - **References, actually opened.** At least three, in any form — URLs, screenshots, local paths, or a description precise enough to find. The agent fetches them and reads the structure rather than taking your word for what's in them.
 - **The tension gets named.** References usually pull in incompatible directions. The agent says what mechanism it sees in each one, then makes you resolve the conflict. That choice tends to be worth more than the brief.
-- **Style proposed, not interrogated.** Typefaces, palette, motion, stack and imagery are inferred from what you've already said and handed back as a proposal. One question to confirm, then on.
+- **Style proposed, not interrogated.** Typefaces, palette, motion, stack and imagery are inferred from what you've already said and handed back as a proposal. One question to confirm, then on. Where the material comes from is written down in [references/libraries.md](references/libraries.md), which you can read without installing anything.
 - **Three directions in prose.** Structurally different ideas, three to five sentences each. No wireframes, no hex codes, no spec tables — detail you can't evaluate yet makes the choice harder, and it gets worked out after you pick.
 - **Built, then reviewed.** Real copy and real images, a quality floor that isn't announced, and a design pass against [`frontend-design`](https://github.com/anthropics/skills) when it's installed or the built-in anti-generic checklist when it isn't.
 - **Handed back, not declared finished.** You get a running URL and three to five specific things worth changing. Vague follow-ups like "make it pop" are treated as real instructions, not as a failure to specify.
@@ -54,6 +54,7 @@ A running dev server, a page built from your brief with real content, and the im
 |---|---|
 | [SKILL.md](SKILL.md) | The six steps, the gates, and what stops the agent advancing |
 | [references/anti-generic.md](references/anti-generic.md) | Reviewing a built page when `frontend-design` isn't installed |
+| [references/libraries.md](references/libraries.md) | Finding typefaces, colour, motion and public-domain imagery — readable on its own, no install needed |
 
 ## Background
 
