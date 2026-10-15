@@ -54,7 +54,7 @@ A running dev server, a page built from your brief with real content, and the im
 |---|---|
 | [SKILL.md](SKILL.md) | The six steps, the gates, and what stops the agent advancing |
 | [references/anti-generic.md](references/anti-generic.md) | Reviewing a built page when `frontend-design` isn't installed |
-| [references/libraries.md](references/libraries.md) | Finding typefaces, colour, motion and public-domain imagery — readable on its own, no install needed |
+| [references/libraries.md](references/libraries.md) | Finding typefaces, motion libraries and public-domain imagery — readable on its own, no install needed |
 
 ## Background
 

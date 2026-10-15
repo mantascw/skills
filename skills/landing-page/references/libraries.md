@@ -24,15 +24,6 @@ The single biggest lever on how a page feels. Change nothing else and change the
 
 For pairing: one family, or two that are clearly distinct. Two faces that are nearly the same read as a mistake.
 
-## Colour
-
-- **[Realtime Colors](https://www.realtimecolors.com)** — test a palette on a real layout instead of as five swatches in a row. Swatches lie; 90% of a page is one background colour.
-- **[Open Props](https://open-props.style)** — CSS custom properties for colour, type, easing and shadow. A token set, not a look.
-- **[oklch.com](https://oklch.com)** — perceptually even colour picking. Lightness steps that actually look like even steps.
-- **[Who Can Use](https://www.whocanuse.com)** — contrast against real vision conditions, not just a pass/fail ratio.
-
-Start from the subject, not from a generator. A page about a painter takes its palette from the paintings.
-
 ## Motion
 
 - **[GSAP](https://gsap.com)** — the standard for scroll-driven work. Fully free since April 2025, including every formerly paid plugin: ScrollTrigger, SplitText, MorphSVG, ScrollSmoother. If you were told ScrollTrigger costs money, that's out of date.
